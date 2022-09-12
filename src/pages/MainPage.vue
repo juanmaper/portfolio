@@ -10,6 +10,8 @@
 
   <p>{{ $t("failed") }}</p>
 
+  <textarea v-model="locale"></textarea>
+
   <!-- Botones aqui -->
 
   <h1 class="text-h3 centerText absolute-center matriverRegularFont">I am Juanma</h1>
@@ -19,13 +21,18 @@
 </template>
 
 <script>
-import { onMounted } from 'vue';
+import { useI18n } from 'vue-i18n'
 import { useQuasar } from 'quasar'
 
 export default {
 
   setup() {
 
+    const { locale } = useI18n({ useScope: 'global' })
+    return {
+      locale
+    }
+  
   }
 
 }

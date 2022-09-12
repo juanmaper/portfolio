@@ -2,6 +2,6 @@
 // so you can safely delete all default props below
 
 export default {
-  failed: 'Action failed',
+  failed: 'Accion fallada',
   success: 'Action was successful'
 }
