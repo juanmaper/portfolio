@@ -6,6 +6,10 @@
           loop />
   </div>
 
+  
+
+  <p>{{ $t("failed") }}</p>
+
   <!-- Botones aqui -->
 
   <h1 class="text-h3 centerText absolute-center matriverRegularFont">I am Juanma</h1>
@@ -15,7 +19,14 @@
 </template>
 
 <script>
+import { onMounted } from 'vue';
+import { useQuasar } from 'quasar'
+
 export default {
+
+  setup() {
+
+  }
 
 }
 </script>
