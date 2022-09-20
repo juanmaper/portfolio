@@ -7,18 +7,20 @@
   </div>
 
   <div class="row">
-    <div class="absolute-right q-pa-md q-gutter-sm col-4">
-      <q-btn flat style="color: #FF0080" label="Fuchsia Flat" />
-      <q-btn flat unelevated no-caps text-color="vue-primary" :label="$t('buttons.aboutMe')" />
-      <q-btn flat unelevated no-caps :label="$t('buttons.projects')" />
-      <q-btn flat unelevated no-caps :label="$t('buttons.contact')" />
+    <div class="absolute-right q-pa-md q-gutter-sm col-5">
+      <q-btn no-caps flat style="color: #FF0080" label="Fuchsia Flat" />
+      <q-btn no-caps color="white" text-color="black" :label="$t('buttons.aboutMe')" />
+      <q-btn no-caps color="primary" :label="$t('buttons.projects')" />
+      <q-btn flat no-caps color="secondary" :label="$t('buttons.contact')" />
+      <q-icon name="flag" color="white" size="32px"/>
+      <q-icon name="flag" color="blue" size="32px"/>
     </div>
   </div>
     
       
     
 
-  <q-select
+  <!-- <q-select
     v-model="locale"
     :options="localeOptions"
     label="Quasar Language"
@@ -32,46 +34,36 @@
 
   <p>{{ $t("failed") }}</p>
 
-  <textarea v-model="locale"></textarea>
+  <textarea v-model="locale"></textarea> -->
 
   <!-- Botones aqui -->
 
-  <h1 class="text-h3 centerText absolute-center matriverRegularFont">I am Juanma</h1>
+  <h1 class="headerText absolute-center matriverRegularFont">I am Juanma</h1>
 
 
-  <h2>dasndonadnasn</h2>
+  <AboutMeComponent />
 </template>
 
 <script>
 import { useI18n } from 'vue-i18n'
+import AboutMeComponent from '../components/AboutMeComponent.vue'
 
 export default {
-
-  setup() {
-
-    const { locale } = useI18n({ useScope: 'global' })
-    return {
-      locale,
-      localeOptions: [
-        { value: 'en-US', label: 'English' },
-        { value: 'es-ES', label: 'Spanish' }
-      ]
-    }
-  
-  }
-
+    setup() {
+        const { locale } = useI18n({ useScope: "global" });
+        return {
+            locale,
+            localeOptions: [
+                { value: "en-US", label: "English" },
+                { value: "es-ES", label: "Spanish" }
+            ]
+        };
+    },
+    components: { AboutMeComponent }
 }
 </script>
 
 <style scoped lang="scss">
-
-
-.centerText {
-  // background-color: red;
-  font-size: 70px;
-  color: $vue-primary;
-  text-align: center;
-}
 
 .container {
   height: 100vh;

@@ -7,6 +7,10 @@ export default {
     projects: 'Proyectos',
     contact: 'Contacto'
   },
+  aboutMe: {
+    title: 'Sobre mí',
+    
+  },
   failed: 'Accion fallada',
   success: 'Action was successful'
 }
