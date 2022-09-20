@@ -5,7 +5,7 @@ export default {
   buttons: {
     aboutMe: 'Sobre mí',
     projects: 'Proyectos',
-    contactMe: 'Contacto'
+    contact: 'Contacto'
   },
   failed: 'Accion fallada',
   success: 'Action was successful'

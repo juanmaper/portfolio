@@ -9,9 +9,9 @@
   <div class="row">
     <div class="absolute-right q-pa-md q-gutter-sm col-4">
       <q-btn flat style="color: #FF0080" label="Fuchsia Flat" />
-      <q-btn color="white" text-color="black" :label="$t('buttons.aboutMe')" />
-      <q-btn color="primary" label="Primary" />
-      <q-btn color="secondary" label="Secondary" />
+      <q-btn flat unelevated no-caps text-color="vue-primary" :label="$t('buttons.aboutMe')" />
+      <q-btn flat unelevated no-caps :label="$t('buttons.projects')" />
+      <q-btn flat unelevated no-caps :label="$t('buttons.contact')" />
     </div>
   </div>
     
