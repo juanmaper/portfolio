@@ -6,7 +6,29 @@
           loop />
   </div>
 
-  
+  <div class="row">
+    <div class="absolute-right q-pa-md q-gutter-sm col-4">
+      <q-btn flat style="color: #FF0080" label="Fuchsia Flat" />
+      <q-btn color="white" text-color="black" :label="$t('buttons.aboutMe')" />
+      <q-btn color="primary" label="Primary" />
+      <q-btn color="secondary" label="Secondary" />
+    </div>
+  </div>
+    
+      
+    
+
+  <q-select
+    v-model="locale"
+    :options="localeOptions"
+    label="Quasar Language"
+    dense
+    borderless
+    emit-value
+    map-options
+    options-dense
+    style="min-width: 150px"
+  />
 
   <p>{{ $t("failed") }}</p>
 
@@ -22,7 +44,6 @@
 
 <script>
 import { useI18n } from 'vue-i18n'
-import { useQuasar } from 'quasar'
 
 export default {
 
@@ -30,7 +51,11 @@ export default {
 
     const { locale } = useI18n({ useScope: 'global' })
     return {
-      locale
+      locale,
+      localeOptions: [
+        { value: 'en-US', label: 'English' },
+        { value: 'es-ES', label: 'Spanish' }
+      ]
     }
   
   }
@@ -57,6 +82,10 @@ video {
   height: 100%;
   width: 100%;
   object-fit: fill;
+}
+
+.redBackground {
+  background-color: red;
 }
 
 </style>

@@ -2,6 +2,11 @@
 // so you can safely delete all default props below
 
 export default {
-  failed: 'Action failed',
+  buttons: {
+    aboutMe: 'Sobre mí',
+    projects: 'Proyectos',
+    contactMe: 'Contacto'
+  },
+  failed: 'Accion fallada',
   success: 'Action was successful'
 }
