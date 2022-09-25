@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <!-- <div class="container">
     <video
           src="~assets/backgroundVideo.mp4" muted
           autoplay
@@ -15,7 +15,7 @@
       <q-icon name="flag" color="white" size="32px"/>
       <q-icon name="flag" color="blue" size="32px"/>
     </div>
-  </div>
+  </div> -->
     
       
     
@@ -38,7 +38,7 @@
 
   <!-- Botones aqui -->
 
-  <h1 class="headerText absolute-center matriverRegularFont">I am Juanma</h1>
+  <!-- <h1 class="headerText absolute-center matriverRegularFont">I am Juanma</h1> -->
 
 
   <AboutMeComponent />
