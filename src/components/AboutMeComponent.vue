@@ -1,13 +1,14 @@
 <template>
   
-  <transition
-    appear
-    enter-active-class="animated fadeInUp"
-    leave-active-class="animated rotateOut"
-  >
-  <h1 class="headerText text-center matriverRegularFont">{{ $t('aboutMe.title') }}</h1>
+  <q-intersection v-for="i in 60" :key="i" transition="fade" style="width: 200px; height:200px; margin-top:200px" 
+    :threshold="1" once>
+    
 
-</transition>
+    <h1  class="headerText text-center matriverRegularFont">{{ $t('aboutMe.title') }}</h1>
+
+  </q-intersection>
+  
+
 
 </template>
 
