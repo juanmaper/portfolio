@@ -1,21 +1,25 @@
 <template>
   
-  <q-intersection transition="fade" :threshold="1" style="width: 200px; height: 200px;" once>
+  <div class="column items-center" style="margin-top: 200px;">
+    <q-intersection transition="fade" :threshold="1" style="width: 100%; height: 200px;" once>
     
 
-    <h1  class="headerText text-center matriverRegularFont">{{ $t('contact.title') }}</h1>
+      <h1  class="headerText text-center matriverRegularFont">{{ $t('contact.title') }}</h1>
 
     
-  </q-intersection>
+    
+    </q-intersection>
+  </div>
   
-  
-  <q-intersection transition="fade" :threshold="1" style="width: 200px; height: 200px;" once>
-    
+  <div class="column items-center">
 
-    <p>hola</p>
-
+    <q-intersection transition="fade" :threshold="1" style="width: 70%; height: 200px;" once>
     
-  </q-intersection>
+      
+          <p class="text-center">Hola</p>
+        
+    </q-intersection>
+  </div>
 
 
 </template>

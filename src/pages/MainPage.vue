@@ -7,7 +7,7 @@
   </div>
 
   <div class="row">
-    <div class="absolute-right q-pa-md q-gutter-sm col-5">
+    <div class="absolute-top-right q-pa-md q-gutter-sm col-5">
       <q-btn no-caps flat style="color: #FF0080" label="Fuchsia Flat" />
       <q-btn no-caps color="white" text-color="black" :label="$t('buttons.aboutMe')" />
       <q-btn no-caps color="primary" :label="$t('buttons.projects')" />
@@ -40,6 +40,12 @@
 
   <h1 class="headerText absolute-center matriverRegularFont">I am Juanma</h1>
 
+
+  <div class="row flex-center">
+    <div class="absolute-bottom q-pa-md q-gutter-sm redBackground">
+      <q-btn no-caps color="primary" label="Tira pabajo" />
+    </div>
+  </div>
 
   <AboutMeComponent />
   <ProjectsComponent />

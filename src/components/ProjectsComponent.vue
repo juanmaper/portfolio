@@ -1,19 +1,24 @@
 <template>
-  <q-intersection transition="fade" :threshold="1" style="width: 200px; height: 200px;" once>
+  <div class="column items-center" style="margin-top: 200px;">
+    <q-intersection transition="fade" :threshold="1" style="width: 100%; height: 200px;" once>
     
 
-    <h1  class="headerText text-center matriverRegularFont" >{{ $t('projects.title') }}</h1>
+      <h1  class="headerText text-center matriverRegularFont">{{ $t('projects.title') }}</h1>
 
     
-  </q-intersection>
-
-  <q-intersection transition="fade" :threshold="1" style="width: 200px; height: 200px;" once>
     
+    </q-intersection>
+  </div>
+  
+  <div class="column items-center">
 
-    <p  class="text-center">Texto de prueba</p>
-
+    <q-intersection transition="fade" :threshold="1" style="width: 70%; height: 200px;" once>
     
-  </q-intersection>
+      
+          <p class="text-center">Texto de prueba</p>
+        
+    </q-intersection>
+  </div>
 </template>
 
 <script>

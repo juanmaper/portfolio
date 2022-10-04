@@ -13,10 +13,10 @@
   
   <div class="column items-center">
 
-    <q-intersection transition="fade" :threshold="1" style="width: 50%; height: 200px;" once>
+    <q-intersection transition="fade" :threshold="1" style="width: 70%; height: 200px;" once>
     
       
-          <p>{{ $t('aboutMe.text') }}</p>
+          <p class="text-center">{{ $t('aboutMe.text') }}</p>
         
     </q-intersection>
   </div>
