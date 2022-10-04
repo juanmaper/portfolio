@@ -1,13 +1,13 @@
 <template>
-  <q-intersection transition="fade" :threshold="1" >
+  <q-intersection transition="fade" :threshold="1" style="width: 200px; height: 200px;" once>
     
 
-    <h1  class="headerText text-center matriverRegularFont">{{ $t('projects.title') }}</h1>
+    <h1  class="headerText text-center matriverRegularFont" >{{ $t('projects.title') }}</h1>
 
     
   </q-intersection>
 
-  <q-intersection transition="fade" :threshold="1" >
+  <q-intersection transition="fade" :threshold="1" style="width: 200px; height: 200px;" once>
     
 
     <p  class="text-center">Texto de prueba</p>

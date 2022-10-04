@@ -1,20 +1,25 @@
 <template>
   
-  <q-intersection transition="fade" :threshold="1" >
+  <div class="column items-center" style="margin-top: 200px;">
+    <q-intersection transition="fade" :threshold="1" style="width: 100%; height: 200px;" once>
     
 
-    <h1  class="headerText text-center matriverRegularFont">{{ $t('aboutMe.title') }}</h1>
+      <h1  class="headerText text-center matriverRegularFont">{{ $t('aboutMe.title') }}</h1>
 
     
     
-  </q-intersection>
+    </q-intersection>
+  </div>
   
-  <q-intersection transition="fade" :threshold="1" >
-  
-    <div class="column items-center">
-        <p class="col">{{ $t('aboutMe.text') }}</p>
-      </div>
-  </q-intersection>
+  <div class="column items-center">
+
+    <q-intersection transition="fade" :threshold="1" style="width: 50%; height: 200px;" once>
+    
+      
+          <p>{{ $t('aboutMe.text') }}</p>
+        
+    </q-intersection>
+  </div>
 
 
 </template>
@@ -27,12 +32,5 @@ export default {
 
 <style scoped lang="scss">
 
-h1 {
-  margin-top: 300px;
-}
-
-p {
-  margin-top: 50px;
-}
 
 </style>
