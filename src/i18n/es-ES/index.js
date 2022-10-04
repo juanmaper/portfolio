@@ -9,7 +9,12 @@ export default {
   },
   aboutMe: {
     title: 'Sobre mí',
-    
+    text: 'Soy un ingeniero informático con experiencia en desarrollo web.' +
+    ' Quiero profesionalizarme en Ruby on Rails, por lo que en mi tiempo libreprofundizo y aprendo este framework desarrollando varias aplicaciones.' +
+    ' Me encanta conocer personas nuevas con las cuales poder afrontar nuevos retoscomo equipo. Me gusta colaborar y poner mi granito de arena para que estemundo sea un poquito mejor, por lo que he participado en algunas iniciativas sinánimo de lucro como desarrollador Android para ayudar a niños con autismo.'
+  },
+  projects: {
+    title: 'Proyectos'
   },
   failed: 'Accion fallada',
   success: 'Action was successful'

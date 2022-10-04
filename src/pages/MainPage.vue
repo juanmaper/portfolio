@@ -1,5 +1,5 @@
 <template>
-  <!-- <div class="container">
+  <div class="container">
     <video
           src="~assets/backgroundVideo.mp4" muted
           autoplay
@@ -15,7 +15,7 @@
       <q-icon name="flag" color="white" size="32px"/>
       <q-icon name="flag" color="blue" size="32px"/>
     </div>
-  </div> -->
+  </div>
     
       
     
@@ -38,15 +38,19 @@
 
   <!-- Botones aqui -->
 
-  <!-- <h1 class="headerText absolute-center matriverRegularFont">I am Juanma</h1> -->
+  <h1 class="headerText absolute-center matriverRegularFont">I am Juanma</h1>
 
 
   <AboutMeComponent />
+  <ProjectsComponent />
+  <ContactComponent />
 </template>
 
 <script>
 import { useI18n } from 'vue-i18n'
 import AboutMeComponent from '../components/AboutMeComponent.vue'
+import ProjectsComponent from '../components/ProjectsComponent.vue'
+import ContactComponent from '../components/ContactComponent.vue'
 
 export default {
     setup() {
@@ -59,7 +63,7 @@ export default {
             ]
         };
     },
-    components: { AboutMeComponent }
+    components: { AboutMeComponent, ProjectsComponent, ContactComponent }
 }
 </script>
 
