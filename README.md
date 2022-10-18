@@ -1,6 +1,6 @@
 # Juanma's portfolio
 
-A portfolio to showcase my projects
+A portfolio to showcase my projects. Developed with Vue.js using Quasar
 
 ## Install the dependencies
 ```bash
