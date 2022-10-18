@@ -1,4 +1,4 @@
-# Juanma's portfolio (portfolio)
+# Juanma's portfolio
 
 A portfolio to showcase my projects
 
